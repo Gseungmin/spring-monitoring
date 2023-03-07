@@ -1,6 +1,6 @@
 management:
   server:
-    port: 9292
+    port: 8081
 
   endpoint:
 
