@@ -1,5 +1,6 @@
 package com.spring.monitoring;
 
+import com.spring.monitoring.order.gauge.StockConfigV1;
 import com.spring.monitoring.order.v0.OrderConfigV0;
 import com.spring.monitoring.order.v1.OrderConfigV1;
 import com.spring.monitoring.order.v2.OrderConfigV2;
@@ -11,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
-@Import(OrderConfigV4.class)
+@Import({OrderConfigV4.class, StockConfigV1.class})
 @SpringBootApplication(scanBasePackages = "com.spring.monitoring.controller")
 public class MonitoringApplication {
 
