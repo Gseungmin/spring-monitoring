@@ -22,6 +22,7 @@ info:
   app:
     name: hello-actuator
     company: sm
+
 logging:
   level:
     com.spring.monitoring.controller: debug
