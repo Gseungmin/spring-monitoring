@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 
 @Import(OrderConfigV0.class)
-@SpringBootApplication(scanBasePackages = "hello.controller")
+@SpringBootApplication(scanBasePackages = "com.spring.monitoring.controller")
 public class MonitoringApplication {
 
 	public static void main(String[] args) {
